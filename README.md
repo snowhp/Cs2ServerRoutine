@@ -1,12 +1,33 @@
-# Cs2ServerRoutine
-Bash script to execute cs2 server and check for updates
+# CS2 Server Routine
 
-Modify the script according to your needs! Add the discord Webhook and GLST token for the server and check all the folders to execute your server.
+This Bash script automates CS2 server updates, integrates Discord notifications, and provides a streamlined way to manage your Counter-Strike 1.6 (CS2) server.
 
-The script will stop the screen on any update ( but recommend use of the AutoUpdater ) and add a cronjob to run the script for a certain period of time. 
+## Features
 
-Recommend using:
+- **Automatic Updates:** Utilizes various scripts for checking and performing updates from GitHub repositories. 
+- **Discord Integration:** Sends update status notifications to Discord via webhooks.
+- **Cronjob Setup:** Includes guidance for setting up periodic execution using cron.
 
-https://github.com/ghostcap-gaming/ACMRS-cs2-metamod-update-fix
-https://github.com/dran1x/CS2-AutoUpdater
-https://github.com/roflmuffin/CounterStrikeSharp
+## Prerequisites
+
+- **Bash:** Ensure your system supports and has Bash installed.
+- **Access to CS2 Server Files:** Access to the directories containing CS2 server files.
+- **Discord Webhook URL:** Obtain a Discord webhook URL for notifications.
+- **GLST Token:** Have a valid GLST token for server management.
+- **CS2-AutoUpdater Script:** https://github.com/dran1x/CS2-AutoUpdater
+- **ACMRS metammod update fix:** https://github.com/ghostcap-gaming/ACMRS-cs2-metamod-update-fix
+
+## Usage
+
+### Configuration
+
+1. Replace `YOUR_DISCORD_WEBHOOK_URL_HERE` with your actual Discord webhook URL.
+2. Replace `YOUR_GLST_TOKEN_HERE` with your GLST token in the script.
+
+### Script Execution
+
+Run the script (`cs2_server_routine.sh`) using Bash:
+
+```bash
+./cs2_server_routine.sh
+
