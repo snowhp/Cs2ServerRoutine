@@ -3,11 +3,11 @@
 STEAMCMD_PATH="./steamcmd/steamcmd.sh" # steamcmd.sh file
 CSGO_INSTALL_PATH="../csgo" # Server location
 SCREEN_NAME="csgo_server" # Screen name for your server
-CSGO_COMMAND="/home/steam/csgo/game/bin/linuxsteamrt64/cs2 -dedicated -console -secure -maxplayers 24 +exec server.cfg +game_type 0 +game_mode 0 +sv_setsteamaccount ADDYOURTOKEN +map de_mirage" # Executable for your cs2 server 
+CSGO_COMMAND="/home/steam/csgo/game/bin/linuxsteamrt64/cs2 -dedicated -console -secure -maxplayers 24 +exec server.cfg +game_type 0 +game_mode 0 +sv_setsteamaccount YOUR_GLST_TOKEN_HERE +map de_mirage" # Executable for your cs2 server 
 #ACMRS_COMMAND="/bin/bash /home/steam/csgo/game/acmrs.sh" # Option for ACMRS to automatically modify gameinfo.gi
 LOG_FILE="/home/steam/logs/csgo_server_casual.log" # Log file if needed
 CONSOLE_LOG_FILE="/home/steam/logs/csgo_server_console.log" # Console log file if needed
-WEBHOOK_URL="https://discord.com/api/webhooks/" # Discord Webhook
+WEBHOOK_URL="YOUR_DISCORD_WEBHOOK_URL_HERE" # Discord Webhook
 SERVER_FILES_PERMISSIONS="chmod 777 /home/steam/csgo -R" # Add permissions to the files
 
 # Function to log messages with timestamp
